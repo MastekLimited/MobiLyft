@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mastek.mobilyft"
+    android:installLocation="auto" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <service android:name=".NotificationService" >
+        <intent-filter>
+            <action android:name="com.mastek.mobilyft.NotificationService" />
+        </intent-filter>
+    </service>
+
+    <receiver
+        android:name=".BootReceiver"
+        android:enabled="true"
+        android:exported="true"
+        android:label="BootReceiver" >
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+    </receiver>
+
+    <application
+        android:name=".GlobalClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".OTPActivity"
+            android:label="@string/title_activity_otp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CurrentLocationActivity"
+            android:label="@string/title_activity_currentLocation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".OfferRideActivity"
+            android:label="@string/title_activity_offerRide"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AvailRideActivity"
+            android:label="@string/title_activity_availRide"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayAvailableRidesActivity"
+            android:label="@string/title_activity_availableRides"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DisplaySelectedRideDetailsActivity"
+            android:label="@string/title_activity_selectedRide"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".AvatarActivity" >
+        </activity>
+        <activity
+            android:name=".MembersListActivity"
+            android:label="@string/title_activity_membersList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".VehicleRegistrationActivity"
+            android:label="@string/title_activity_vehicleRegistration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".RequestedRidesActivity" >
+        </activity>
+    </application>
+
+</manifest>

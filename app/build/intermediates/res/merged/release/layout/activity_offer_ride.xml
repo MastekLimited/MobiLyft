@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    tools:context="com.mastek.mobilyft.OfferRideActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:id="@+id/llVehicleType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Vehicle Type"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/spVehicleType"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:prompt="@string/vehicleType_title"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"  />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVehRegNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Vehicle Reg. No."
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etVehRegNo"
+                    android:layout_weight="1"
+                    android:maxLength="13"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRegVehLists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Vehicle"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/spRegVehicles"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:prompt="@string/selectVehicle_title"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"  />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Location From"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/spLocFrom"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:prompt="@string/locationFrom_title"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Location To"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/spLocTo"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:prompt="@string/locationTo_title"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1.00"
+                    android:text="Date"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/etDate"
+                    android:layout_weight="1"
+                    android:maxLength="10"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imgBtnDate"
+                    android:src="@drawable/date"
+                    android:layout_gravity="center_horizontal"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Time"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:ems="10"
+                    android:id="@+id/etTime"
+                    android:layout_weight="1"
+                    android:maxLength="5"/>
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imgBtnTime"
+                    android:src="@drawable/time"
+                    android:scaleType="fitXY"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Available Seats"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <!--<EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/etAvailableSeats"
+                    android:layout_weight="1"
+                    android:maxLength="2"/>-->
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spTotalAvailableSeats"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog"
+                    android:prompt="@string/totalAvailableSeats_title"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Charge/Person"
+                    android:textSize="@dimen/text_size_normal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Rs"
+                    android:textSize="@dimen/text_size_normal" />
+
+
+
+                <!--<ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imgBtnMinus"
+                    android:src="@drawable/minus"/>-->
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/etChargePerPerson"
+                    android:layout_weight="1"
+                    android:enabled="true"
+                    android:maxLength="5"/>
+
+
+                <!--<ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imgBtnPlus"
+                    android:src="@drawable/plus"/>-->
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Offer"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:id="@+id/btnSubmit"
+                android:onClick="SaveOfferRideData"
+                android:enabled="true"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout><!-- From: file:/D:/Andriod_Development/Codes/MobiLyft/MobiLyft/app/src/main/res/layout/activity_offer_ride.xml -->

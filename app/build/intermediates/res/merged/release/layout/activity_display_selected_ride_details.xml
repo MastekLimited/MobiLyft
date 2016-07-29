@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context="com.mastek.mobilyft.DisplaySelectedRideDetailsActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="#F7E5D1">
+
+                <ImageView
+                    android:id="@+id/imgViewRideUserPhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:src="@drawable/circularbackground"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.50" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tvRideUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Jeetendra Jaiswal"/>
+
+                    <TextView
+                        android:id="@+id/tvRideUserGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Male"
+                        android:layout_below="@+id/tvRideUserName" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/ivMobile"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/call_icon_brown"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="fitXY"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:id="@+id/tvRideUserMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:text="9768776544"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/ivMobile"
+                        android:layout_toEndOf="@+id/ivMobile" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/ivEmail"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/mail_icon_brown"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:scaleType="fitXY"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+                    <TextView
+                        android:id="@+id/tvRideUserEmail"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_toRightOf="@+id/ivEmail"
+                        android:layout_toEndOf="@+id/ivEmail"
+                        android:text="jeetendrakumar.jaiswal@mastek.com"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="From"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+                    <ImageView
+                        android:id="@+id/ivFromLoc"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/location"
+                        android:scaleType="fitXY"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@+id/tvFrom"
+                        android:layout_alignStart="@+id/tvFrom" />
+                    <TextView
+                        android:id="@+id/tvFromLocationName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="Mahape"
+                        android:textColor="#07cd25"
+                        android:layout_toRightOf="@+id/ivFromLoc"
+                        android:layout_below="@+id/tvRideDateTime"/>
+                    <TextView
+                        android:id="@+id/arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="●────────────────────●"
+                        android:layout_toRightOf="@+id/tvFromLocationName"
+                        android:layout_toEndOf="@+id/tvFromLocationName"
+                        android:layout_below="@+id/tvRideDateTime"
+                        android:layout_alignParentBottom="true" />
+                    <TextView
+                        android:id="@+id/tvTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:text="To"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignLeft="@+id/ivToLoc"
+                        android:layout_alignStart="@+id/ivToLoc" />
+                    <ImageView
+                        android:id="@+id/ivToLoc"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/locationred"
+                        android:scaleType="fitXY"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/arrow"
+                        android:layout_toEndOf="@+id/arrow"
+                        android:layout_below="@+id/tvRideDateTime"/>
+                    <TextView
+                        android:id="@+id/tvToLocationName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="Thane"
+                        android:textColor="#d72e08"
+                        android:layout_toRightOf="@+id/ivToLoc"
+                        android:layout_toEndOf="@+id/ivToLoc"
+                        android:layout_below="@+id/tvRideDateTime"/>
+                    <TextView
+                        android:id="@+id/tvRideDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="14/01/2016 11:00"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignLeft="@+id/arrow"
+                        android:layout_alignStart="@+id/arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp">
+                    <ImageView
+                        android:id="@+id/ivVehicleType"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/car"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@android:color/transparent"/>
+                    <TextView
+                        android:id="@+id/tvVehicleDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_toRightOf="@+id/ivVehicleType"
+                        android:layout_toEndOf="@+id/ivVehicleType"
+                        android:layout_marginLeft="5dp"
+                        android:text="MH 04 AA 12345"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tvAvailableSeats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="3"
+                        android:background="@drawable/filltextview"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Available Seats"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_toRightOf="@+id/tvAvailableSeats"
+                        android:layout_toEndOf="@+id/tvAvailableSeats"/>
+                </RelativeLayout>
+
+                <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/rupee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:text="\u20B9"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"/>
+                    <TextView
+                        android:id="@+id/tvChargePerPerson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_normal"
+                        android:text="25"
+                        android:layout_toRightOf="@+id/rupee"
+                        android:layout_toEndOf="@+id/rupee"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="/- per person"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_toRightOf="@+id/tvChargePerPerson"
+                        android:layout_toEndOf="@+id/tvChargePerPerson" />
+                </RelativeLayout>-->
+
+
+
+            <TextView
+                android:id="@+id/tvChargePerPerson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:text="Rs 25/- per person"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/textviewborder"/>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/tvCancellationRemarks"
+                    android:text="Remarks:"
+                    android:textSize="@dimen/text_size_normal" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etCancellationRemarks"
+                    android:layout_weight="1"
+                    android:maxLength="100"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:minLines="1"
+                    android:gravity="top|left"
+                    android:maxLines="3"
+                    android:scrollbars="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Book Ride"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/btnBookRide"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:onClick="BookRide"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Cancel Ride"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/btnCancelRide"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:onClick="CancelRide"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+<!-- From: file:/D:/Andriod_Development/Codes/MobiLyft/MobiLyft/app/src/main/res/layout/activity_display_selected_ride_details.xml -->

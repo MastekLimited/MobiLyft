@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.mastek.mobilyft.OTPActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:text="Enter the OTP send to the registered company email-id \n "
+                    android:id="@+id/tvOTPEmailID"
+                    android:layout_weight="1.88" />
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+                <!--<EditText
+                    android:layout_width="124dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/etOTP"
+                    android:maxLength="8"
+                    android:inputType="number"
+                    android:hint="Enter OTP"
+                    android:layout_gravity="center_horizontal" />-->
+                <EditText android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:hint="Enter OTP"
+                    android:id="@+id/etOTP"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="30dp"
+                    android:maxLength="4"/>
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Verify"
+                    android:id="@+id/btnSubmitOTP"
+                    android:onClick="VerifyOTP"
+                    android:textAllCaps="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/btn"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If you do not receive your OTP within 10 mins, you may request for another OTP by clicking on the 'Resend OTP' button"
+                    android:id="@+id/tvResendOTP" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Resend OTP"
+                    android:id="@+id/btnResendOTP"
+                    android:onClick="ResendOTP"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/btn"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+<!-- From: file:/D:/Andriod_Development/Codes/MobiLyft/MobiLyft/app/src/main/res/layout/activity_otp.xml -->

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:showIn="@layout/app_bar_home"
+    android:orientation="vertical"
+    android:background="@drawable/homepage"
+    tools:context="com.mastek.mobilyft.HomeActivity">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true">
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offer a Ride"
+                    android:id="@+id/btnOfferRide"
+                    android:onClick="btnOfferRide_Click"
+                    android:layout_gravity="center_horizontal" />-->
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/offer"
+                    android:id="@+id/btnOfferRide"
+                    android:onClick="btnOfferRide_Click"
+                    android:text="Offer a Ride"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center_horizontal"/>
+
+                <LinearLayout android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true">
+
+
+                    <!--<ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/home"
+                        android:id="@+id/imgbtnOffeRideToHome"
+                        android:onClick="OffeRideToHome"/>-->
+
+
+                    <!--<Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offer Now for Home"
+                        android:id="@+id/btnOffeRideToHome"
+                        android:onClick="OffeRideToHome"
+                        android:layout_gravity="center_horizontal" />-->
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/offer"
+                        android:id="@+id/btnOffeRideToHome"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"
+                        android:text="Offer Now for Home"
+                        android:onClick="OffeRideToHome"
+                        android:layout_gravity="center_horizontal" />
+
+
+                    <!--<ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/office"
+                        android:id="@+id/imgbtnOffeRideToOffice"
+                        android:onClick="OffeRideToOffice"/>-->
+
+
+                    <!--<Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offer Now for Office"
+                        android:id="@+id/btnOffeRideToOffice"
+                        android:onClick="OffeRideToOffice"
+                        android:layout_gravity="center_horizontal" />-->
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/offer"
+                        android:id="@+id/btnOffeRideToOffice"
+                        android:text="Offer Now for Office"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"
+                        android:onClick="OffeRideToOffice"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true">
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Avail a Ride"
+                    android:id="@+id/btnAvailRide"
+                    android:onClick="btnAvailRide_Click"
+                    android:layout_gravity="center_horizontal" />-->
+                <Button
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/avail"
+                    android:text="Avail a Ride"
+                    android:id="@+id/btnAvailRide"
+                    android:onClick="btnAvailRide_Click"
+                    android:textColor="#FFFFFF"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center_horizontal" />
+
+
+                <LinearLayout android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true">
+
+
+                    <!--<ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/home"
+                        android:id="@+id/imgbtnAvailRideToHome"
+                        android:onClick="AvailRideToHome"/>-->
+
+                    <!--<Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avail Now for Home"
+                        android:id="@+id/btnAvailRideToHome"
+                        android:onClick="AvailRideToHome"
+                        android:layout_gravity="center_horizontal" />-->
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/avail"
+                        android:text="Avail Now for Home"
+                        android:id="@+id/btnAvailRideToHome"
+                        android:onClick="AvailRideToHome"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal" />
+
+
+                    <!--<ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/office"
+                        android:id="@+id/imgbtnAvailRideToOffice"
+                        android:onClick="AvailRideToOffice"/>-->
+
+
+                    <!--<Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avail Now for Office"
+                        android:id="@+id/btnAvailRideToOffice"
+                        android:onClick="AvailRideToOffice"
+                        android:layout_gravity="center_horizontal" />-->
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Avail Now for Office"
+                        android:background="@drawable/avail"
+                        android:id="@+id/btnAvailRideToOffice"
+                        android:onClick="AvailRideToOffice"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+<!-- From: file:/D:/Andriod_Development/Codes/MobiLyft/MobiLyft/app/src/main/res/layout/content_home.xml -->

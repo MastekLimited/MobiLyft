@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+
+    <!--<gradient
+    android:angle="315"
+    android:centerX="35%"
+    android:centerColor="#2683c2"
+    android:startColor="#2683c2"
+    android:endColor="#2683c2"
+    aid:type="linear"
+    />
+    <gradient
+        android:angle="315"
+        android:centerX="35%"
+        android:centerColor="#02ff05"
+        android:startColor="#02ff05"
+        android:endColor="#02ff05"
+        android:type="linear"
+        />-->
+
+    <gradient
+        android:angle="315"
+        android:centerX="35%"
+        android:centerColor="#deff7302"
+        android:startColor="#deff7302"
+        android:endColor="#deff7302"
+        android:type="linear"
+        />
+<corners android:radius="5dp"/>
+
+
+
+</shape><!-- From: file:/D:/Andriod_Development/Codes/MobiLyft/MobiLyft/app/src/main/res/drawable/btn.xml -->

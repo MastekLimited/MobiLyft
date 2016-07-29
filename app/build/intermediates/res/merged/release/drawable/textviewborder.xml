@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" >
+    <solid android:color="@android:color/transparent" />
+    <stroke android:width="1dip" android:color="#CFCFCF"/>
+    <corners android:radius="2dp"/>
+</shape><!-- From: file:/D:/Andriod_Development/Codes/MobiLyft/MobiLyft/app/src/main/res/drawable/textviewborder.xml -->

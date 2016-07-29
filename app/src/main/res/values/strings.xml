@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">MobiLyft</string>
+    <string name="action_settings">Settings</string>
+    <string name="gender_title">Gender</string>
+    <string name="vehicleType_title">Vehicle Type</string>
+    <string name="selectVehicle_title">Select a Vehicle</string>
+    <string name="locationFrom_title">Location From</string>
+    <string name="locationTo_title">Location To</string>
+    <string name="currentBranch_title">Current Branch</string>
+    <string name="officeLocation_title">Office Location</string>
+    <string name="homeLocation_title">Home Location</string>
+    <string name="totalAvailableSeats_title">Total Available Seats</string>
+
+
+
+    <!-- Gender -->
+    <string name="M">Male</string>
+    <string name="F">Female</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="MobileNumber">Mobile Number</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_splash">Welcome</string>
+    <string name="title_activity_availRide">Avail a Ride</string>
+    <string name="title_activity_currentLocation">Select Locations</string>
+    <string name="title_activity_availableRides">Available Rides</string>
+    <string name="title_activity_selectedRide">Selected Ride Details</string>
+    <string name="title_activity_offerRide">Offer a Ride</string>
+    <string name="title_activity_otp">Verification</string>
+    <string name="title_activity_vehicleRegistration">Register vehicle</string>
+    <string name="title_activity_membersList">Members availed your ride</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- Vehicle Types -->
+    <string name="B">Bike</string>
+    <string name="C">Car</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="Rs">\u20B9</string>
+
+    <string-array name="vehicle_type_array">
+        <item>Car</item>
+        <item>Motorcycle</item>
+    </string-array>
+</resources>

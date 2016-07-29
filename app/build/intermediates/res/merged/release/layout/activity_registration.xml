@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mastek.mobilyft.RegistrationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:layout_alignParentTop="true">
+
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/logo"/>
+
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign up"
+                    android:textColor="#2582C5"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+
+                    android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:gravity="right"
+                    android:orientation="horizontal" >
+
+                    <ImageView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/Title"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            -->
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <ImageView android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/title"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Name"
+                        android:id="@+id/name"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="30dp"
+                        android:maxLength="25"
+                        android:singleLine="true"
+                        android:inputType="textCapWords"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Company registered email"
+                        android:id="@+id/compemail"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="15dp"
+                        android:maxLength="50"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="@string/MobileNumber"
+                        android:id="@+id/mobileno"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="15dp"
+                        android:inputType="number"
+                        android:maxLength="10"/>
+                </LinearLayout>
+                <!--<Spinner
+                    android:id="@+id/gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="@string/gender_title"
+                    android:spinnerMode="dialog"
+                    android:entries="@array/GenderList"/>-->
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/rgGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/genderMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:checked="true"/>
+
+                        <RadioButton
+                            android:id="@+id/genderFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <!--<Button android:layout_width="190dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="Next"
+                    android:id="@+id/submit"
+                    android:textColor="#fff"
+                    android:background="@drawable/btn"
+                    android:onClick="RegisterUser"/>-->
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <Button android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="16dp"
+                    android:text="Next"
+                    android:id="@+id/submit"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/btn"
+                    android:textAllCaps="false"
+                    android:onClick="RegisterUser"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+<!-- From: file:/D:/Andriod_Development/Codes/MobiLyft/MobiLyft/app/src/main/res/layout/activity_registration.xml -->

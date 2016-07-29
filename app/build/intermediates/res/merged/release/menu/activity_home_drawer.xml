@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_myOfferedRides" android:icon="@android:drawable/ic_menu_search"
+            android:title="My Offered Rides" />
+        <item android:id="@+id/nav_myAvailedRides" android:icon="@android:drawable/ic_menu_search"
+            android:title="My Availed Rides" />
+        <item android:id="@+id/nav_myRideMembersList" android:icon="@android:drawable/ic_menu_search"
+            android:title="Availed Members" />
+        <item android:id="@+id/nav_requestedRides" android:icon="@android:drawable/ic_menu_search"
+            android:title="Ride Requests" />
+        <item android:id="@+id/nav_changeLocation" android:icon="@android:drawable/ic_menu_manage"
+            android:title="Change Location" />
+    </group>
+</menu><!-- From: file:/D:/Andriod_Development/Codes/MobiLyft/MobiLyft/app/src/main/res/menu/activity_home_drawer.xml -->

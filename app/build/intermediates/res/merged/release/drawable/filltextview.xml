@@ -1,0 +1,11 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="5dp"
+    android:shape="ring"
+    android:thicknessRatio="1.1"
+    android:useLevel="false" >
+    <solid android:color="#0415af" />
+
+    <stroke
+        android:width="10dp"
+        android:color="#0415af" />
+</shape><!-- From: file:/D:/Andriod_Development/Codes/MobiLyft/MobiLyft/app/src/main/res/drawable/filltextview.xml -->
