@@ -1,14 +1,5 @@
 apply plugin: 'com.android.application'
 
-android {
-    signingConfigs {
-        MobiLyftConfig {
-            keyAlias 'AppReleaseKey'
-            keyPassword 'jeetendrajaiswal'
-            storeFile file('D:/Andriod_Development/KeyStore/MobiLyft.jks')
-            storePassword 'jeetendrajaiswal'
-        }
-    }
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
     defaultConfig {
